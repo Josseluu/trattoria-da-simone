@@ -40,10 +40,10 @@ export function Footer() {
               href="https://www.instagram.com/trattoria.da.simone/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity"
             >
               <Instagram className="h-5 w-5" />
-              <span>@trattoria.da.simone</span>
+              <span>Síguenos en Instagram</span>
             </a>
           </div>
 
@@ -88,8 +88,10 @@ export function Footer() {
             </div>
             <div className="flex items-start gap-3 mt-6">
               <Clock className="h-4 w-4 mt-0.5 opacity-70" />
-              <div className="text-sm opacity-80">
-                <p><strong>Horario:</strong> Lunes a Domingo: 8:30 - 1:00</p>
+              <div className="text-sm opacity-80 space-y-1">
+                <p><strong>Local Sala y Bar:</strong> 11:00 a 1:00 (todos los días)</p>
+                <p><strong>Cocina y Pizzería:</strong> 13:00 a 16:00 y 20:00 a 23:45 (todos los días)</p>
+                <p className="text-primary font-semibold">Martes cerrado por descanso</p>
               </div>
             </div>
           </div>
