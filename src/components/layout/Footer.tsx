@@ -37,7 +37,7 @@ export function Footer() {
             </p>
             {/* Instagram */}
             <a 
-              href="https://www.instagram.com/trattoria.da.simone" 
+              href="https://www.instagram.com/trattoria.da.simone/"
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold hover:opacity-90 transition-opacity"
