@@ -1,7 +1,22 @@
 import { Link } from 'react-router-dom';
-import { UtensilsCrossed, MapPin, Phone, Clock } from 'lucide-react';
+import { UtensilsCrossed, MapPin, Phone, Clock, Instagram } from 'lucide-react';
 
 export function Footer() {
+  const locations = [
+    {
+      name: 'Avenida Cantabria',
+      address: 'Avenida Cantabria, 39',
+      phone: '913 293 804',
+      phoneLink: 'tel:+34913293804',
+    },
+    {
+      name: 'Torrejón de Ardoz',
+      address: 'Andalucía, 2, 28850 Torrejón de Ardoz, Madrid',
+      phone: '911 64 42 49',
+      phoneLink: 'tel:+34911644249',
+    },
+  ];
+
   return (
     <footer className="bg-foreground text-primary-foreground">
       <div className="container max-w-screen-xl py-12">
@@ -20,6 +35,16 @@ export function Footer() {
               Auténtica cocina italiana en el corazón de la ciudad. 
               Tradición, sabor y pasión.
             </p>
+            {/* Instagram */}
+            <a 
+              href="https://www.instagram.com/trattoria.da.simone/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity"
+            >
+              <Instagram className="h-5 w-5" />
+              <span>@trattoria.da.simone</span>
+            </a>
           </div>
 
           {/* Quick Links */}
@@ -41,34 +66,30 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Contact Info */}
-          <div>
-            <h3 className="font-display text-lg font-semibold mb-4">Contacto</h3>
-            <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <MapPin className="h-4 w-4 mt-0.5 opacity-70" />
-                <span className="text-sm opacity-80">
-                  Avenida Cantabria, 39
-                </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="h-4 w-4 opacity-70" />
-                <a href="tel:+34913293804" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
-                  913 293 804
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Hours */}
-          <div>
-            <h3 className="font-display text-lg font-semibold mb-4">Horario</h3>
-            <div className="space-y-2">
-              <div className="flex items-start gap-3">
-                <Clock className="h-4 w-4 mt-0.5 opacity-70" />
-                <div className="text-sm opacity-80">
-                  <p><strong>Lunes a Domingo:</strong> 8:30 - 1:00</p>
+          {/* Locations */}
+          <div className="lg:col-span-2">
+            <h3 className="font-display text-lg font-semibold mb-4">Nuestros Locales</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {locations.map((loc, i) => (
+                <div key={i} className="space-y-3">
+                  <h4 className="font-semibold text-sm">{loc.name}</h4>
+                  <div className="flex items-start gap-3">
+                    <MapPin className="h-4 w-4 mt-0.5 opacity-70 flex-shrink-0" />
+                    <span className="text-sm opacity-80">{loc.address}</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="h-4 w-4 opacity-70 flex-shrink-0" />
+                    <a href={loc.phoneLink} className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+                      {loc.phone}
+                    </a>
+                  </div>
                 </div>
+              ))}
+            </div>
+            <div className="flex items-start gap-3 mt-6">
+              <Clock className="h-4 w-4 mt-0.5 opacity-70" />
+              <div className="text-sm opacity-80">
+                <p><strong>Horario:</strong> Lunes a Domingo: 8:30 - 1:00</p>
               </div>
             </div>
           </div>

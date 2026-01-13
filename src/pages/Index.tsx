@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom';
 import { Layout } from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { UtensilsCrossed, Clock, MapPin, Star } from 'lucide-react';
-import foodCannoli from '@/assets/food-cannoli.png';
-import foodPizza from '@/assets/food-pizza.png';
+import food1 from '@/assets/food-1.png';
+import food2 from '@/assets/food-2.png';
+import food3 from '@/assets/food-3.png';
+import food4 from '@/assets/food-4.png';
 import heroVideo from '@/assets/hero-pizza-video.mp4';
 
 const Index = () => {
@@ -80,27 +82,22 @@ const Index = () => {
           <h2 className="font-display text-3xl font-bold text-center mb-8">
             Nuestros Platos
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="group relative overflow-hidden rounded-2xl aspect-square">
-              <img 
-                src={foodPizza} 
-                alt="Pizza Quattro Stagioni" 
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <span className="text-white font-display text-xl font-semibold">Pizza Quattro Stagioni</span>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { src: food1, alt: 'Plato italiano 1' },
+              { src: food2, alt: 'Plato italiano 2' },
+              { src: food3, alt: 'Plato italiano 3' },
+              { src: food4, alt: 'Plato italiano 4' },
+            ].map((food, i) => (
+              <div key={i} className="group relative overflow-hidden rounded-2xl aspect-square">
+                <img 
+                  src={food.src} 
+                  alt={food.alt} 
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-            </div>
-            <div className="group relative overflow-hidden rounded-2xl aspect-square">
-              <img 
-                src={foodCannoli} 
-                alt="Cannoli Siciliani" 
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <span className="text-white font-display text-xl font-semibold">Cannoli Siciliani</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
