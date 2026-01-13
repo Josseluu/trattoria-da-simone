@@ -12,10 +12,7 @@ export function Footer() {
               <UtensilsCrossed className="h-8 w-8" />
               <div className="flex flex-col">
                 <span className="font-display text-xl font-bold leading-tight">
-                  L'Incontro
-                </span>
-                <span className="text-[10px] uppercase tracking-widest opacity-70">
-                  Ristorante Italiano
+                  Trattoria da Simone
                 </span>
               </div>
             </Link>
@@ -100,7 +97,7 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-sm opacity-60">
-            © {new Date().getFullYear()} Restaurante L'Incontro. Todos los derechos reservados.
+            © {new Date().getFullYear()} Trattoria da Simone. Todos los derechos reservados.
           </p>
         </div>
       </div>

@@ -18,11 +18,11 @@ const Index = () => {
           <div className="max-w-2xl mx-auto text-center space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
               <UtensilsCrossed className="h-4 w-4" />
-              Ristorante Italiano
+              Trattoria Italiana
             </div>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
               Benvenuti a<br />
-              <span className="text-primary">L'Incontro</span>
+              <span className="text-primary">Trattoria da Simone</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl mx-auto">
               Descubre la auténtica cocina italiana con nuestras pastas frescas, pizzas artesanales 
