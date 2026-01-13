@@ -7,7 +7,7 @@ const Index = () => {
   const highlights = [
     { icon: UtensilsCrossed, title: 'Cocina Auténtica', desc: 'Recetas tradicionales italianas' },
     { icon: Star, title: 'Ingredientes Premium', desc: 'Productos importados de Italia' },
-    { icon: Clock, title: 'Desde 1995', desc: 'Más de 25 años de tradición' },
+    { icon: Clock, title: 'Abierto Cada Día', desc: 'De 8:30 a 1:00, lunes a domingo' },
   ];
 
   return (
@@ -33,7 +33,7 @@ const Index = () => {
                 <Link to="/carta">Ver La Carta</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="font-semibold">
-                <Link to="/reservas">Reservar Mesa</Link>
+                <Link to="/contacto">Cómo Llegar</Link>
               </Button>
             </div>
           </div>
@@ -65,11 +65,11 @@ const Index = () => {
               ¿Listo para una experiencia italiana?
             </h2>
             <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">
-              Reserva tu mesa y disfruta de nuestra cocina tradicional en un ambiente acogedor.
+              Ven a visitarnos y disfruta de nuestra cocina tradicional en un ambiente acogedor.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary" className="font-semibold">
-                <Link to="/reservas">Reservar Ahora</Link>
+                <Link to="/carta">Ver La Carta</Link>
               </Button>
               <Button asChild size="lg" variant="ghost" className="font-semibold text-primary-foreground hover:text-primary-foreground hover:bg-primary-foreground/10">
                 <Link to="/contacto" className="flex items-center gap-2">

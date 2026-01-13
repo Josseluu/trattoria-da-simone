@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { UtensilsCrossed, MapPin, Phone, Clock, Instagram, Facebook } from 'lucide-react';
+import { UtensilsCrossed, MapPin, Phone, Clock } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -18,7 +18,7 @@ export function Footer() {
             </Link>
             <p className="text-sm opacity-80 leading-relaxed">
               Auténtica cocina italiana en el corazón de la ciudad. 
-              Tradición, sabor y pasión desde 1995.
+              Tradición, sabor y pasión.
             </p>
           </div>
 
@@ -53,8 +53,8 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="h-4 w-4 opacity-70" />
-                <a href="tel:+34912345678" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
-                  +34 912 345 678
+                <a href="tel:+34913293804" className="text-sm opacity-80 hover:opacity-100 transition-opacity">
+                  913 293 804
                 </a>
               </div>
             </div>
@@ -67,30 +67,9 @@ export function Footer() {
               <div className="flex items-start gap-3">
                 <Clock className="h-4 w-4 mt-0.5 opacity-70" />
                 <div className="text-sm opacity-80">
-                  <p><strong>Lun - Vie:</strong> 13:00 - 16:00, 20:00 - 23:30</p>
-                  <p><strong>Sáb - Dom:</strong> 13:00 - 16:30, 20:00 - 00:00</p>
+                  <p><strong>Lunes a Domingo:</strong> 8:30 - 1:00</p>
                 </div>
               </div>
-            </div>
-            <div className="flex gap-4 mt-4">
-              <a 
-                href="https://instagram.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="opacity-70 hover:opacity-100 transition-opacity"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="opacity-70 hover:opacity-100 transition-opacity"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
             </div>
           </div>
         </div>

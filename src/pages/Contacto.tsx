@@ -18,9 +18,9 @@ export default function ContactoPage() {
               <div className="space-y-6">
                 {[
                   { icon: MapPin, title: 'Dirección', content: 'Avenida Cantabria, 39' },
-                  { icon: Phone, title: 'Teléfono', content: '+34 912 345 678', link: 'tel:+34912345678' },
+                  { icon: Phone, title: 'Teléfono', content: '913 293 804', link: 'tel:+34913293804' },
                   { icon: Mail, title: 'Email', content: 'info@trattoriadasimone.es', link: 'mailto:info@trattoriadasimone.es' },
-                  { icon: Clock, title: 'Horario', content: 'Lun-Vie: 13:00-16:00, 20:00-23:30\nSáb-Dom: 13:00-16:30, 20:00-00:00' },
+                  { icon: Clock, title: 'Horario', content: 'Lunes a Domingo: 8:30 - 1:00' },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">
                     <div className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
