@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { Layout } from '@/components/layout/Layout';
 import { Button } from '@/components/ui/button';
 import { UtensilsCrossed, Clock, MapPin, Star } from 'lucide-react';
+import foodCannoli from '@/assets/food-cannoli.png';
+import foodPizza from '@/assets/food-pizza.png';
 
 const Index = () => {
   const highlights = [
@@ -53,6 +55,37 @@ const Index = () => {
                 <p className="text-muted-foreground">{item.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Food Gallery */}
+      <section className="py-16">
+        <div className="container max-w-screen-xl">
+          <h2 className="font-display text-3xl font-bold text-center mb-8">
+            Nuestros Platos
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="group relative overflow-hidden rounded-2xl aspect-square">
+              <img 
+                src={foodPizza} 
+                alt="Pizza Quattro Stagioni" 
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <span className="text-white font-display text-xl font-semibold">Pizza Quattro Stagioni</span>
+              </div>
+            </div>
+            <div className="group relative overflow-hidden rounded-2xl aspect-square">
+              <img 
+                src={foodCannoli} 
+                alt="Cannoli Siciliani" 
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <span className="text-white font-display text-xl font-semibold">Cannoli Siciliani</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
