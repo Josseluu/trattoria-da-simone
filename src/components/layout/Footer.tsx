@@ -57,9 +57,6 @@ export function Footer() {
               <Link to="/nosotros" className="block text-sm opacity-80 hover:opacity-100 transition-opacity">
                 Sobre Nosotros
               </Link>
-              <Link to="/reservas" className="block text-sm opacity-80 hover:opacity-100 transition-opacity">
-                Reservas
-              </Link>
               <Link to="/contacto" className="block text-sm opacity-80 hover:opacity-100 transition-opacity">
                 Contacto
               </Link>
