@@ -149,7 +149,7 @@ const Index = () => {
               <p className="opacity-90">Descubre nuestras novedades, platos del día y promociones exclusivas</p>
             </div>
             <a 
-              href="https://www.instagram.com/trattoria.da.simone" 
+              href="https://www.instagram.com/trattoria.da.simone/"
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-pink-600 font-semibold px-6 py-3 rounded-full hover:bg-white/90 transition-colors"
