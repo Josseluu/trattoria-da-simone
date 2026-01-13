@@ -16,8 +16,8 @@ const Index = () => {
 
   const highlights = [
     { icon: UtensilsCrossed, title: 'Cocina Auténtica', desc: 'Recetas tradicionales italianas' },
-    { icon: Star, title: 'Ingredientes Premium', desc: 'Productos importados de Italia' },
-    { icon: Clock, title: 'Abierto Cada Día', desc: 'Consulta nuestros horarios' },
+    { icon: Star, title: 'Desde 2023', desc: 'Tu pizzería de confianza' },
+    { icon: Clock, title: 'Dos Locales', desc: 'En Alameda y Torrejón de Ardoz' },
   ];
 
   const dishes = [
@@ -79,14 +79,14 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Menu del día */}
             <div className="bg-primary-foreground/10 rounded-xl p-6 text-center text-primary-foreground border border-primary-foreground/20">
-              <h3 className="font-display text-2xl font-bold mb-2">🍽️ Menú del Día</h3>
+              <h3 className="font-display text-2xl font-bold mb-2">Menú del Día</h3>
               <p className="text-3xl font-bold mb-2">13€</p>
               <p className="text-sm opacity-90">Primer plato + Segundo plato + Pan + Bebida + Postre o Café</p>
               <p className="text-xs mt-2 opacity-75">Disponible en ambos restaurantes</p>
             </div>
-            {/* Jueves 3x2 */}
+            {/* Jueves Locos */}
             <div className="bg-primary-foreground/10 rounded-xl p-6 text-center text-primary-foreground border border-primary-foreground/20">
-              <h3 className="font-display text-2xl font-bold mb-2">🍕 Jueves de Pizza</h3>
+              <h3 className="font-display text-2xl font-bold mb-2">Jueves Locos de Pizza</h3>
               <p className="text-3xl font-bold mb-2">3x2</p>
               <p className="text-sm opacity-90">En todas las pizzas</p>
               <p className="text-xs mt-2 opacity-75">Solo en Torrejón de Ardoz</p>
@@ -149,7 +149,7 @@ const Index = () => {
               <p className="opacity-90">Descubre nuestras novedades, platos del día y promociones exclusivas</p>
             </div>
             <a 
-              href="https://www.instagram.com/trattoria.da.simone/" 
+              href="https://www.instagram.com/trattoria.da.simone" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-pink-600 font-semibold px-6 py-3 rounded-full hover:bg-white/90 transition-colors"

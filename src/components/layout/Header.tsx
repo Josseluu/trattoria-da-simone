@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
-import { Menu, X, UtensilsCrossed } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
@@ -20,7 +20,7 @@ export function Header() {
       <div className="container flex h-16 max-w-screen-xl items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 transition-opacity hover:opacity-80">
-          <UtensilsCrossed className="h-8 w-8 text-primary" />
+          <img src="/logo.png" alt="Trattoria da Simone" className="h-12 w-auto" />
           <div className="flex flex-col">
             <span className="font-display text-xl font-bold text-foreground leading-tight">
               Trattoria da Simone
