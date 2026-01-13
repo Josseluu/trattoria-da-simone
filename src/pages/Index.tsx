@@ -82,7 +82,7 @@ const Index = () => {
             {/* Menu del día */}
             <div className="bg-primary-foreground/10 rounded-xl p-6 text-center text-primary-foreground border border-primary-foreground/20">
               <h3 className="font-display text-2xl font-bold mb-2">Menú del Día</h3>
-              <p className="text-3xl font-bold mb-2">13€</p>
+              <p className="text-3xl font-bold mb-2">14,50€</p>
               <p className="text-sm opacity-90">Primer plato + Segundo plato + Pan + Bebida + Postre o Café</p>
               <p className="text-xs mt-2 opacity-75">Disponible en ambos restaurantes</p>
             </div>
