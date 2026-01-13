@@ -17,7 +17,7 @@ export default function ContactoPage() {
             <div className="space-y-8">
               <div className="space-y-6">
                 {[
-                  { icon: MapPin, title: 'Dirección', content: 'Calle Principal, 123\n28001 Madrid, España' },
+                  { icon: MapPin, title: 'Dirección', content: 'Avenida Cantabria, 39' },
                   { icon: Phone, title: 'Teléfono', content: '+34 912 345 678', link: 'tel:+34912345678' },
                   { icon: Mail, title: 'Email', content: 'reservas@lincontro.es', link: 'mailto:reservas@lincontro.es' },
                   { icon: Clock, title: 'Horario', content: 'Lun-Vie: 13:00-16:00, 20:00-23:30\nSáb-Dom: 13:00-16:30, 20:00-00:00' },

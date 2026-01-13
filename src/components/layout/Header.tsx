@@ -8,7 +8,6 @@ const navLinks = [
   { href: '/', label: 'Inicio' },
   { href: '/carta', label: 'La Carta' },
   { href: '/nosotros', label: 'Nosotros' },
-  { href: '/reservas', label: 'Reservas' },
   { href: '/contacto', label: 'Contacto' },
 ];
 
@@ -48,9 +47,6 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <Button asChild size="sm" className="ml-2">
-            <Link to="/reservas">Reservar Mesa</Link>
-          </Button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -84,11 +80,6 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="mt-2">
-              <Link to="/reservas" onClick={() => setIsMenuOpen(false)}>
-                Reservar Mesa
-              </Link>
-            </Button>
           </nav>
         </div>
       )}

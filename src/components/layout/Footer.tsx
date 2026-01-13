@@ -51,8 +51,7 @@ export function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 mt-0.5 opacity-70" />
                 <span className="text-sm opacity-80">
-                  Calle Principal, 123<br />
-                  28001 Madrid, España
+                  Avenida Cantabria, 39
                 </span>
               </div>
               <div className="flex items-center gap-3">
