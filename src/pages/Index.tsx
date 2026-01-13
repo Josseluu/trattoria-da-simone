@@ -32,14 +32,16 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section with Video Background */}
-      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary/90 to-primary/70">
         {/* Video Background */}
         <video
           autoPlay
           muted
           loop
           playsInline
+          preload="auto"
           className="absolute inset-0 w-full h-full object-cover"
+          poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'%3E%3Crect fill='%23722F37' width='1920' height='1080'/%3E%3C/svg%3E"
         >
           <source src={heroVideo} type="video/mp4" />
         </video>
