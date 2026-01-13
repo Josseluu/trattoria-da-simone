@@ -19,7 +19,7 @@ export default function ContactoPage() {
                 {[
                   { icon: MapPin, title: 'Dirección', content: 'Avenida Cantabria, 39' },
                   { icon: Phone, title: 'Teléfono', content: '+34 912 345 678', link: 'tel:+34912345678' },
-                  { icon: Mail, title: 'Email', content: 'reservas@lincontro.es', link: 'mailto:reservas@lincontro.es' },
+                  { icon: Mail, title: 'Email', content: 'info@trattoriadasimone.es', link: 'mailto:info@trattoriadasimone.es' },
                   { icon: Clock, title: 'Horario', content: 'Lun-Vie: 13:00-16:00, 20:00-23:30\nSáb-Dom: 13:00-16:30, 20:00-00:00' },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4">

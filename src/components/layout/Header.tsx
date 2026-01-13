@@ -23,10 +23,7 @@ export function Header() {
           <UtensilsCrossed className="h-8 w-8 text-primary" />
           <div className="flex flex-col">
             <span className="font-display text-xl font-bold text-foreground leading-tight">
-              L'Incontro
-            </span>
-            <span className="text-[10px] uppercase tracking-widest text-muted-foreground">
-              Ristorante Italiano
+              Trattoria da Simone
             </span>
           </div>
         </Link>

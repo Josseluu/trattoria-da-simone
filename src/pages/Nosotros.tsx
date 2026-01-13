@@ -8,7 +8,7 @@ export default function NosotrosPage() {
         <div className="container max-w-screen-xl">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">Sobre Nosotros</h1>
-            <p className="text-lg text-muted-foreground">La historia detrás de L'Incontro</p>
+            <p className="text-lg text-muted-foreground">La historia detrás de Trattoria da Simone</p>
           </div>
         </div>
       </div>
@@ -18,9 +18,9 @@ export default function NosotrosPage() {
           <div className="max-w-3xl mx-auto space-y-8">
             <div className="prose prose-lg mx-auto text-center">
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Desde 1995, <strong className="text-foreground">Restaurante L'Incontro</strong> ha sido un punto de encuentro 
-                para los amantes de la auténtica cocina italiana. Nuestro nombre, que significa "El Encuentro" en italiano, 
-                refleja nuestra filosofía: un lugar donde la tradición culinaria italiana se encuentra con la calidez de la hospitalidad española.
+                Desde 1995, <strong className="text-foreground">Trattoria da Simone</strong> ha sido un punto de encuentro 
+                para los amantes de la auténtica cocina italiana. Un lugar donde la tradición culinaria italiana 
+                se encuentra con la calidez de la hospitalidad española.
               </p>
             </div>
 
