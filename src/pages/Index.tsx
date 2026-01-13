@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { UtensilsCrossed, Clock, MapPin, Star } from 'lucide-react';
 import foodCannoli from '@/assets/food-cannoli.png';
 import foodPizza from '@/assets/food-pizza.png';
+import heroVideo from '@/assets/hero-pizza-video.mp4';
 
 const Index = () => {
   const highlights = [
@@ -14,19 +15,33 @@ const Index = () => {
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 via-background to-accent/10 py-20 lg:py-32">
-        <div className="container max-w-screen-xl">
+      {/* Hero Section with Video Background */}
+      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+        {/* Video Background */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+        
+        {/* Content */}
+        <div className="relative z-10 container max-w-screen-xl">
           <div className="max-w-2xl mx-auto text-center space-y-6">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm text-white text-sm font-medium border border-white/20">
               <UtensilsCrossed className="h-4 w-4" />
               Trattoria Italiana
             </div>
-            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
+            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg">
               Benvenuti a<br />
               <span className="text-primary">Trattoria da Simone</span>
             </h1>
-            <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+            <p className="text-lg text-white/90 max-w-xl mx-auto drop-shadow-md">
               Descubre la auténtica cocina italiana con nuestras pastas frescas, pizzas artesanales 
               y platos tradicionales elaborados con pasión.
             </p>
@@ -34,7 +49,7 @@ const Index = () => {
               <Button asChild size="lg" className="font-semibold">
                 <Link to="/carta">Ver La Carta</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="font-semibold">
+              <Button asChild size="lg" variant="outline" className="font-semibold bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20 hover:text-white">
                 <Link to="/contacto">Cómo Llegar</Link>
               </Button>
             </div>
